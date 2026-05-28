@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush - Un suspiro de dulzura</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos_maquetacion.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        
+    <style>
+    .galeria-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .item-producto {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            border: 1px solid #fff0f3;
+        }
+        .item-producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .item-producto h3 {
+            color: #5c3a21;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        .item-producto p {
+            color: #7a5447;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header style="padding: 15px 0 !important; display: flex; align-items: center; width: 100%; box-sizing: border-box;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; box-sizing: border-box;">
+            
+          
+            <div class="logo" style="display: flex; align-items: center; margin: 0; padding: 0;">
+                <a href="index.html" style="display: block; line-height: 0;">
+                   
+                    
+                    <img src="img/logo.jpeg" alt="Sugar Rush Logo" style="height: 90px !important; width: auto !important; max-height: none !important; min-height: 90px !important; display: block; border-radius: 8px;">
+                </a>
+            </div>
+
+            <nav style="display: flex; align-items: center;">
+                <ul class="nav-menu" style="display: flex; align-items: center; margin: 0; padding: 0; list-style: none;">
+                    <li><a href="index.html"><i class="fi fi-bs-login-lock"></i>Inicio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#"><i class="fi fi-sr-customer-care"></i>Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="pasteles.html">Pasteles Especiales</a></li>
+                            <li><a href="cupcakes.html">Cupcakes y Muffins</a></li>
+                            <li><a href="galletas.html">Galletas Caseras</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container" style="padding: 80px 0;">
+        <h1 style="font-size: 3rem; margin-bottom: 10px; color: #ff8baf;">Galletas Caseras</h1>
+        <p style="font-size: 1.2rem; max-width: 700px; text-align: justify;">
+            Horneadas diariamente con mantequilla pura y trozos generosos de los mejores ingredientes. Crujientes por fuera, suaves por dentro y perfectas para cualquier momento del día.
+        </p>
+
+      
+        <div class="galeria-productos">
+            <div class="item-producto">
+                <img src="img/chispas.jpg" alt="Galleta Chispas">
+                <h3>Chispas de Chocolate</h3>
+                <p>Nuestra receta tradicional con abundante chocolate semi-amargo derretido en cada mordida.</p>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/jengibre.jpg" alt="Galletas de Jengibre">
+                <h3>Especias de Jengibre</h3>
+                <p>Galletas artesanales horneadas con un toque perfecto de jengibre, canela y decoradas a mano.</p>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/besonuez.webp" alt="Galleta de Beso de Nuez">
+                <h3>Besos de Nuez</h3>
+                <p>Polvorones clásicos de mantequilla y nuez picada, espolvoreados con fina azúcar glass.</p>
+            </div>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📍 Parque Venustiano Carranza. Paraíso, Tabasco</p>
+                    <p>📞 +52 933 136 3093</p>
+                    <p>✉️ contacto@sugarrush.com</p>
+                </div>
+                
+         
+               <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <p>Paraíso, Tabasco</p>
+                    <p>México, C.P. 86600</p>
+                    <p><a href="https://www.google.com/maps/place/Venustiano+Carranza+Park/@18.395485,-93.2171948,17z/data=!3m1!4b1!4m6!3m5!1s0x85ee8cd43c8d1bd9:0x80d4d2b77e16ad9!8m2!3d18.395485!4d-93.2146145!16s%2Fg%2F1v940f0w?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNS4wIKXMDSoASAFQAw%3D%3D"target="_blank" style="color: inherit !important; text-decoration: none !important;">Ver en Google Maps</a></p>
+                </div>
+                
+               
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                        <li><a href="privacidad.html">Aviso de privacidad</a></li>
+                        <li><a href="soporte.html">Soporte al cliente</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sugar Rush. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

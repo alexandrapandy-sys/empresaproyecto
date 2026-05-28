@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte al Cliente - Sugar Rush</title>
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel='stylesheet' href='https://flaticon.com'>
+    <link rel='stylesheet' href='https://flaticon.com'>
+    <style>
+        .contenedor-soporte {
+            max-width: 750px;
+            margin: 40px auto 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(255, 139, 175, 0.08);
+            border-top: 8px solid #ff8baf;
+        }
+        .contenedor-soporte h2 {
+            color: #5c3a21;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        .grupo-campo {
+            margin-bottom: 20px;
+        }
+        .grupo-campo label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #5c3a21;
+        }
+        .grupo-campo input, .grupo-campo select, .grupo-campo textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ffdae3;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffbfb;
+            box-sizing: border-box;
+            color: #7a5447;
+        }
+        .grupo-campo input:focus, .grupo-campo select:focus, .grupo-campo textarea:focus {
+            outline: none;
+            border-color: #ff8baf;
+        }
+        .btn-soporte {
+            width: 100%;
+            background-color: #ff8baf;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-soporte:hover {
+            background-color: #e07295;
+        }
+        .info-urgente {
+            background-color: #fff5f7;
+            border-left: 4px solid #ff8baf;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            color: #7a5447;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <header style="padding: 15px 0 !important; display: flex; align-items: center; width: 100%; box-sizing: border-box;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; box-sizing: border-box;">
+            
+          
+            <div class="logo" style="display: flex; align-items: center; margin: 0; padding: 0;">
+                <a href="index.html" style="display: block; line-height: 0;">
+                
+                    <img src="img/logo.jpeg" alt="Sugar Rush Logo" style="height: 90px !important; width: auto !important; max-height: none !important; min-height: 90px !important; display: block; border-radius: 8px;">
+                </a>
+            </div>
+
+        
+            <nav style="display: flex; align-items: center;">
+                <ul class="nav-menu" style="display: flex; align-items: center; margin: 0; padding: 0; list-style: none;">
+                    <li><a href="index.html"><i class="fi fi-bs-login-lock"></i>Inicio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#"><i class="fi fi-sr-customer-care"></i>Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="pasteles.html">Pasteles Especiales</a></li>
+                            <li><a href="cupcakes.html">Cupcakes y Muffins</a></li>
+                            <li><a href="galletas.html">Galletas Caseras</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container" style="padding: 60px 0;">
+        <h1 style="font-size: 2.8rem; margin-bottom: 10px; color: #ff8baf; text-align: center; font-weight: 600;">Centro de Soporte al Cliente</h1>
+        <p style="font-size: 1.1rem; max-width: 650px; text-align: center; margin: 0 auto 40px auto; color: #7a5447;">
+            ¿Tienes algún inconveniente o requerimiento especial con tu orden? Levanta un ticket de atención y nuestro equipo corporativo te atenderá de inmediato.
+        </p>
+
+      
+        <div class="contenedor-soporte">
+            <div class="info-urgente">
+                <strong> ¿Tu evento es hoy mismo?</strong> Si necesitas atención prioritaria debido a un pedido para las próximas horas, te sugerimos utilizar directamente la línea de asistencia telefónica o el código QR de WhatsApp en la página de inicio.
+            </div>
+
+            <form onsubmit="alert('¡Ticket de atención registrado! Se ha asignado el folio de seguimiento #' + Math.floor(Math-random()*90000 + 10000) + '. Revisaremos tu caso en un plazo menor a 2 horas.'); event.preventDefault();">
+                <h2>Levantar Ticket de Incidencia</h2>
+                
+                <div class="grupo-campo">
+                    <label>Nombre del Cliente / Empresa</label>
+                    <input type="text" placeholder="Ingresa tu nombre completo" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label>Correo Electrónico de Contacto</label>
+                    <input type="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label>Número de WhatsApp para Notificaciones</label>
+                    <input type="tel" placeholder="10 dígitos (ej. 9331234567)" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label>¿Cuál es el motivo de tu reporte?</label>
+                    <select required>
+                        <option value="" disabled selected>Selecciona una opción...</option>
+                        <option value="pedido">Modificación de diseño / sabor en mi pedido</option>
+                        <option value="entrega">Aclaración sobre mi entrega a domicilio en Paraíso</option>
+                        <option value="pago">Problemas o aclaraciones con mi transferencia / pago</option>
+                        <option value="queja">Reporte de calidad del producto</option>
+                        <option value="otro">Otro asunto corporativo</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label>Descripción detallada de la situación</label>
+                    <textarea rows="5" placeholder="Escribe aquí de forma clara los detalles del caso para ayudarte más rápido..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-soporte">Registrar Ticket de Soporte</button>
+            </form>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📍 Parque Venustiano Carranza. Paraíso, Tabasco</p>
+                    <p>📞 +52 933 136 3093</p>
+                    <p>✉️ contacto@sugarrush.com</p>
+                </div>
+                
+                 <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <p>Paraíso, Tabasco</p>
+                    <p>México, C.P. 86600</p>
+                    <p><a href="https://www.google.com/maps/place/Venustiano+Carranza+Park/@18.395485,-93.2171948,17z/data=!3m1!4b1!4m6!3m5!1s0x85ee8cd43c8d1bd9:0x80d4d2b77e16ad9!8m2!3d18.395485!4d-93.2146145!16s%2Fg%2F1v940f0w?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit !important; text-decoration: none !important;">Ver en Google Maps</a></p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+                        <li><a href="privacidad.html">Aviso de Privacidad</a></li>
+                        <li><a href="soporte.html">Soporte al Cliente</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sugar Rush. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

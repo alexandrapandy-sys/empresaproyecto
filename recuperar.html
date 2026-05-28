@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - Sugar Rush</title>
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel='stylesheet' href='https://flaticon.com'>
+    <link rel='stylesheet' href='https://flaticon.com'>
+    <style>
+        .seccion-recuperar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 0;
+            background-color: #fffafb;
+        }
+        .recuperar-container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 25px rgba(255, 139, 175, 0.15); 
+            width: 100%; 
+            max-width: 400px; 
+            border-top: 10px solid #ff8baf; 
+        }
+        .recuperar-container h1 { color: #5c3a21; text-align: center; margin-bottom: 10px; font-size: 1.6em; font-family: 'Poppins', sans-serif; }
+        .recuperar-container p { text-align: justify; color: #7a5447; margin-bottom: 25px; font-size: 0.95rem; line-height: 1.5; font-family: 'Poppins', sans-serif; }
+        .recuperar-container label { display: block; margin-bottom: 8px; font-weight: bold; color: #5c3a21; font-family: 'Poppins', sans-serif; }
+        .recuperar-container input { width: 100%; padding: 12px; margin-bottom: 25px; border: 1px solid #ffdae3; border-radius: 5px; box-sizing: border-box; font-size: 1em; background-color: #fffbfb; font-family: 'Poppins', sans-serif; color: #7a5447; }
+        .recuperar-container input:focus { outline: none; border-color: #ff8baf; }
+        
+        .btn-recuperar { width: 100%; background-color: #ff8baf; color: white; padding: 14px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1em; font-weight: bold; transition: background-color 0.3s ease; font-family: 'Poppins', sans-serif; }
+        .btn-recuperar:hover { background-color: #e07295; }
+        
+        .regresar-login { display: block; text-align: center; margin-top: 25px; text-decoration: none; color: #7a5447; font-size: 0.9em; font-family: 'Poppins', sans-serif; }
+        .regresar-login:hover { color: #ff8baf; }
+    </style>
+</head>
+<body>
+
+
+    <header style="padding: 15px 0 !important; display: flex; align-items: center; width: 100%; box-sizing: border-box;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; box-sizing: border-box;">
+            
+           
+            <div class="logo" style="display: flex; align-items: center; margin: 0; padding: 0;">
+                <a href="index.html" style="display: block; line-height: 0;">
+             
+                    <img src="img/logo.jpeg" alt="Sugar Rush Logo" style="height: 90px !important; width: auto !important; max-height: none !important; min-height: 90px !important; display: block; border-radius: 8px;">
+                </a>
+            </div>
+
+            
+            <nav style="display: flex; align-items: center;">
+                <ul class="nav-menu" style="display: flex; align-items: center; margin: 0; padding: 0; list-style: none;">
+                    <li><a href="index.html"><i class="fi fi-bs-login-lock"></i>Inicio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#"><i class="fi fi-sr-customer-care"></i>Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="pasteles.html">Pasteles Especiales</a></li>
+                            <li><a href="cupcakes.html">Cupcakes y Muffins</a></li>
+                            <li><a href="galletas.html">Galletas Caseras</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- CUERPO DE RECUPERACIÓN -->
+    <main class="container seccion-recuperar">
+        <div class="recuperar-container">
+            <h1>¿Olvidaste tu contraseña?</h1>
+            <p>Ingresa tu correo electrónico registrado y te enviaremos un enlace seguro para restablecer tus datos de acceso a Sugar Rush al instante.</p>
+            
+            <form onsubmit="enviarCorreo(event)">
+                <label>Correo Electrónico</label>
+                <input type="email" id="correoRecuperar" placeholder="usuario@correo.com" required>
+
+                <button type="submit" class="btn-recuperar">Enviar Enlace de Recuperación</button>
+            </form>
+
+            <a href="login.html" class="regresar-login">← Volver al Login</a>
+        </div>
+    </main>
+
+  
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📍 Parque Venustiano Carranza. Paraíso, Tabasco</p>
+                    <p>📞 +52 933 136 3093</p>
+                    <p>✉️ contacto@sugarrush.com</p>
+                </div>
+                
+                 <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <p>Paraíso, Tabasco</p>
+                    <p>México, C.P. 86600</p>
+                    <p><a href="https://www.google.com/maps/place/Venustiano+Carranza+Park/@18.395485,-93.2171948,17z/data=!3m1!4b1!4m6!3m5!1s0x85ee8cd43c8d1bd9:0x80d4d2b77e16ad9!8m2!3d18.395485!4d-93.2146145!16s%2Fg%2F1v940f0w?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit !important; text-decoration: none !important;">Ver en Google Maps</a></p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+                        <li><a href="privacidad.html">Aviso de Privacidad</a></li>
+                        <li><a href="soporte.html">Soporte al Cliente</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sugar Rush. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

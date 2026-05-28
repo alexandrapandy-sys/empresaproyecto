@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - Sugar Rush</title>
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="estilos_maquetacion.css">
+    <link rel='stylesheet' href='https://flaticon.com'>
+    <link rel='stylesheet' href='https://flaticon.com'>
+    <style>
+        .seccion-registro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 0;
+            background-color: #fffafb;
+        }
+        .registro-container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 25px rgba(255, 139, 175, 0.15); 
+            width: 100%; 
+            max-width: 450px; 
+            border-top: 10px solid #ff8baf; 
+        }
+        .registro-container h1 { color: #5c3a21; text-align: center; margin-bottom: 5px; font-size: 1.8em; font-family: 'Poppins', sans-serif; }
+        .registro-container p.lema-registro { text-align: center; color: #7a5447; margin-bottom: 25px; font-size: 0.9em; font-style: italic; font-family: 'Poppins', sans-serif; }
+        .registro-container label { display: block; margin-bottom: 6px; font-weight: bold; color: #5c3a21; font-family: 'Poppins', sans-serif; font-size: 0.9rem; }
+        .registro-container input { width: 100%; padding: 11px; margin-bottom: 15px; border: 1px solid #ffdae3; border-radius: 5px; box-sizing: border-box; font-size: 0.95em; background-color: #fffbfb; font-family: 'Poppins', sans-serif; color: #7a5447; }
+        .registro-container input:focus { outline: none; border-color: #ff8baf; }
+        
+        .btn-registrar { width: 100%; background-color: #ff8baf; color: white; padding: 14px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1em; font-weight: bold; transition: background-color 0.3s ease; font-family: 'Poppins', sans-serif; margin-top: 10px; }
+        .btn-registrar:hover { background-color: #e07295; }
+        
+        .volver-login { display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #7a5447; font-size: 0.9em; font-family: 'Poppins', sans-serif; }
+        .volver-login:hover { color: #ff8baf; }
+    </style>
+</head>
+<body>
+
+
+    <header style="padding: 15px 0 !important; display: flex; align-items: center; width: 100%; box-sizing: border-box;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; box-sizing: border-box;">
+            
+           
+            <div class="logo" style="display: flex; align-items: center; margin: 0; padding: 0;">
+                <a href="index.html" style="display: block; line-height: 0;">
+                   
+                    <img src="img/logo.jpeg" alt="Sugar Rush Logo" style="height: 90px !important; width: auto !important; max-height: none !important; min-height: 90px !important; display: block; border-radius: 8px;">
+                </a>
+            </div>
+
+            <nav style="display: flex; align-items: center;">
+                <ul class="nav-menu" style="display: flex; align-items: center; margin: 0; padding: 0; list-style: none;">
+                    <li><a href="index.html"><i class="fi fi-bs-login-lock"></i>Inicio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#"><i class="fi fi-sr-customer-care"></i>Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="pasteles.html">Pasteles Especiales</a></li>
+                            <li><a href="cupcakes.html">Cupcakes y Muffins</a></li>
+                            <li><a href="galletas.html">Galletas Caseras</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- CUERPO DE REGISTRO -->
+    <main class="container seccion-registro">
+        <div class="registro-container">
+            <h1>Crear Cuenta</h1>
+            <p class="lema-registro">"Un suspiro de dulzura en cada bocado"</p>
+            
+            <form onsubmit="registrarUsuario(event)">
+                <label>Nombre Completo</label>
+                <input type="text" id="nombreCompleto" placeholder="Tu nombre y apellidos" required>
+
+                <label>Correo Electrónico</label>
+                <input type="email" id="correoRegistro" placeholder="usuario@correo.com" required>
+
+                <label>Contraseña</label>
+                <input type="password" id="pass1" placeholder="Mínimo 6 caracteres" required>
+
+                <label>Confirmar Contraseña</label>
+                <input type="password" id="pass2" placeholder="Repite tu contraseña" required>
+
+                <button type="submit" class="btn-registrar">Registrar Nueva Cuenta</button>
+            </form>
+
+            <a href="login.html" class="volver-login">¿Ya tienes cuenta? Inicia sesión aquí</a>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📍Parque Venustiano Carranza. Paraíso, Tabasco</p>
+                    <p>📞 +52 933 136 3093</p>
+                    <p>✉️ contacto@sugarrush.com</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <p>Paraíso, Tabasco</p>
+                    <p>México, C.P. 86600</p>
+                    <p><a href="https://www.google.com/maps/place/Venustiano+Carranza+Park/@18.395485,-93.2171948,17z/data=!3m1!4b1!4m6!3m5!1s0x85ee8cd43c8d1bd9:0x80d4d2b77e16ad9!8m2!3d18.395485!4d-93.2146145!16s%2Fg%2F1v940f0w?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit !important; text-decoration: none !important;">Ver en Google Maps</a></p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                        <li><a href="privacidad.html">Aviso de privacidad</a></li>
+                        <li><a href="soporte.html">Soporte al cliente</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sugar Rush. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE VALIDACIÓN -->
+    <script>
+        function registrarUsuario(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombreCompleto').value;
+            const p1 = document.getElementById('pass1').value;
+            const p2 = document.getElementById('pass2').value;
+
+            if (p1 !== p2) {
+                alert('Las contraseñas ingresadas no coinciden. Por favor, verifícalas.');
+                return;
+            }
+
+            alert('¡Registro Exitoso!\nBienvenido(a) a Sugar Rush, ' + nombre + '. Ya puedes iniciar sesión con tu cuenta.');
+            window.location.href = "login.html"; 
+        }
+    </script>
+
+</body>
+</html>
+

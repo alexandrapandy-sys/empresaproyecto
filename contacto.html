@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush - Un suspiro de dulzura</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos_maquetacion.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <style>
+    .formulario-contacto {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+            box-shadow: 0 8px 25px rgba(255, 139, 175, 0.1);
+            border-top: 8px solid #ff8baf;
+        }
+        .formulario-contacto h2 {
+            color: #5c3a21;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .campo {
+            margin-bottom: 20px;
+        }
+        .campo label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #5c3a21;
+        }
+        .campo input, .campo textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ffdae3;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffbfb;
+            box-sizing: border-box;
+        }
+        .campo input:focus, .campo textarea:focus {
+            outline: none;
+            border-color: #ff8baf;
+        }
+        .btn-enviar {
+            width: 100%;
+            background-color: #ff8baf;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-enviar:hover {
+            background-color: #e07295;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="padding: 15px 0 !important; display: flex; align-items: center; width: 100%; box-sizing: border-box;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; box-sizing: border-box;">
+            
+            <div class="logo" style="display: flex; align-items: center; margin: 0; padding: 0;">
+                <a href="index.html" style="display: block; line-height: 0;">
+                   
+                    <img src="img/logo.jpeg" alt="Sugar Rush Logo" style="height: 90px !important; width: auto !important; max-height: none !important; min-height: 90px !important; display: block; border-radius: 8px;">
+                </a>
+            </div>
+
+          
+            <nav style="display: flex; align-items: center;">
+                <ul class="nav-menu" style="display: flex; align-items: center; margin: 0; padding: 0; list-style: none;">
+                    <li><a href="index.html"><i class="fi fi-bs-login-lock"></i>Inicio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#"><i class="fi fi-sr-customer-care"></i>Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="pasteles.html">Pasteles Especiales</a></li>
+                            <li><a href="cupcakes.html">Cupcakes y Muffins</a></li>
+                            <li><a href="galletas.html">Galletas Caseras</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="container" style="padding: 60px 0;">
+        <h1 style="font-size: 3rem; margin-bottom: 10px; color: #ff8baf; text-align: center;">Ponte en Contacto</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; text-align: center; margin: 0 auto 30px auto; color: #7a5447;">
+            ¿Tienes un evento especial o una duda sobre nuestros postres? Déjanos un mensaje y te responderemos con mucha dulzura.
+        </p>
+
+       
+        <form class="formulario-contacto" onsubmit="alert('¡Mensaje enviado con éxito! Nos comunicaremos contigo pronto.'); event.preventDefault();">
+            <h2>Escríbenos</h2>
+            <div class="campo">
+                <label>Nombre Completo</label>
+                <input type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="campo">
+                <label>Correo Electrónico</label>
+                <input type="email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="campo">
+                <label>Mensaje o Pedido Especial</label>
+                <textarea rows="5" placeholder="Cuéntanos qué pastel o postre necesitas..." required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+               
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📍 Parque Venustiano Carranza. Paraíso, Tabasco</p>
+                    <p>📞 +52 933 136 3093</p>
+                    <p>✉️ contacto@sugarrush.com</p>
+                </div>
+                
+                
+               <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <p>Paraíso, Tabasco</p>
+                    <p>México, C.P. 86600</p>
+                    <p><a href="https://www.google.com/maps/place/Venustiano+Carranza+Park/@18.395485,-93.2171948,17z/data=!3m1!4b1!4m6!3m5!1s0x85ee8cd43c8d1bd9:0x80d4d2b77e16ad9!8m2!3d18.395485!4d-93.2146145!16s%2Fg%2F1v940f0w?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit !important; text-decoration: none !important;">Ver en Google Maps</a></p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+                        <li><a href="privacidad.html">Aviso de Privacidad</a></li>
+                        <li><a href="soporte.html">Soporte al Cliente</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sugar Rush. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
