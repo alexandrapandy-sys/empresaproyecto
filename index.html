@@ -273,23 +273,19 @@
             <h2 class="titulo-seccion" style="color: #ff8baf;">¡Pedidos y Dudas!</h2>
             <div class="contenedor-tres">
                 
-              <!-- Cuadro del Código QR de WhatsApp -->
-<div class="cuadro cuadro-pequeno" style="text-align: center; max-width: 300px; margin: 0 auto; font-family: Arial, sans-serif;">
+            <div class="cuadro cuadro-pequeno" style="text-align: center; max-width: 300px; margin: 0 auto; font-family: Arial, sans-serif;">
     <div class="media-container" style="height: 180px; background-color: #fff; border: 1px solid #ffdae3; display: flex; align-items: center; justify-content: center;">
         
-        <!-- CÓDIGO QR SEGURO (Si la imagen no carga, el script de abajo lo dibuja) -->
-        <div id="qrcode-sugar">
-            <img src="https://qrserver.com" 
-                 alt="Código QR WhatsApp" 
-                 style="width: 150px; height: 150px; display: block; margin: auto;"
-                 onerror="generarQREmergencia()">
-        </div>
+        
+        <img src="qr-whatsapp.png" 
+             alt="Código QR WhatsApp Sugar Rush" 
+             style="width: 150px; height: 150px; display: block; margin: auto;">
     </div>
     
     <h4 style="margin-top: 10px; font-weight: bold;">¡Escríbenos por WhatsApp!</h4>
     <p style="font-size: 0.85rem; color: #555; padding: 0 10px;">Escanea el código QR con tu celular o haz clic en el botón de abajo para iniciar un chat directo con nosotros.</p>
     
-    <!-- Botón directo simplificado sin caracteres raros -->
+   
     <a href="https://wa.me" 
        target="_blank" 
        class="leer-mas" 
@@ -297,30 +293,6 @@
        Chatear ahora
     </a>
 </div>
-
-<!-- SISTEMA DE EMERGENCIA EN JAVASCRIPT POR SI TU NAVEGADOR BLOQUEA IMÁGENES EXTERNAS -->
-<script src="https://cloudflare.com"></script>
-<script>
-    function generarQREmergencia() {
-        var contenedor = document.getElementById("qrcode-sugar");
-        contenedor.innerHTML = ""; // Borra la imagen rota
-        new QRCode(contenedor, {
-            text: "https://wa.me",
-            width: 150,
-            height: 150
-        });
-    }
-    // Ejecución forzada por seguridad al cargar la página
-    setTimeout(function() {
-        var img = document.querySelector("#qrcode-sugar img");
-        if (!img || img.naturalWidth === 0) {
-            generarQREmergencia();
-        }
-    }, 1000);
-</script>
-
-
-
                 <!-- Cuadro de Horarios -->
                 <div class="cuadro cuadro-pequeno">
                     <div style="height: 180px; background-image: url('img/reloj.webp'); background-size: cover; background-position: center;" class="media-container"></div>
