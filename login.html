@@ -86,14 +86,14 @@
             <p class="lema-login">"Un suspiro de dulzura en cada bocado"</p>
             
             <form onsubmit="validarAcceso(event)">
-                <label>Correo electrónico o Usuario</label>
-                <input type="text" id="usuario" placeholder="usuario@correo.com" required>
+    <label>Correo electrónico o Usuario</label>
+    <input type="text" id="usuario" placeholder="Ingresa tu usuario" required>
 
-                <label>Contraseña</label>
-                <input type="password" id="password" placeholder="••••••••" required>
+    <label>Contraseña</label>
+    <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
 
-                <button type="submit" class="btn-enviar-login">Ingresar al Portal</button>
-            </form>
+    <button type="submit" class="btn-enviar-login">Ingresar al Portal</button>
+</form>
 
             <div class="opciones-extra">
                 <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
@@ -141,14 +141,25 @@
     </footer>
 
     
-    <script>
-        function validarAcceso(event) {
-            event.preventDefault();
-            const user = document.getElementById('usuario').value;
-            alert('Iniciando sesión para: ' + user + '. ¡Bienvenido de vuelta a Sugar Rush!');
-            window.location.href = "index.html"; 
+  <script>
+    // Función para validar las credenciales de acceso del formulario
+    function validarAcceso(event) {
+        event.preventDefault();
+        
+        // Captura de los datos ingresados en los campos de la interfaz
+        const user = document.getElementById('usuario').value;
+        const pass = document.getElementById('password').value;
+
+        // Validación condicional de las credenciales de prueba
+        if (user === "Regina" && pass === "QWER1234") {
+            alert('Autenticación exitosa. ¡Bienvenida de vuelta a Sugar Rush, Regina!');
+            window.location.href = "index.html"; // Redirección al inicio
+        } else {
+            alert('Error de autenticación: Credenciales incorrectas. Intente de nuevo.');
         }
-    </script>
+    }
+</script>
+
 
 </body>
 </html>
