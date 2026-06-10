@@ -165,6 +165,23 @@
             </div>
         </div>
     </footer>
+     <script>
+    const formulario = document.querySelector('.formulario-contacto');
+    formulario.removeAttribute('onsubmit');
+
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const nombreInput = document.getElementById('nombreContacto')?.value || formulario.querySelector('input[type="text"]').value;
+        const correoInput = document.getElementById('correoContacto')?.value || formulario.querySelector('input[type="email"]').value;
+
+        if (nombreInput === "Regina Palma Reyes" && correoInput === "regina@gmail.com") {
+            alert('¡Mensaje enviado con éxito! Los datos de Regina Palma Reyes han sido validados.');
+        } else {
+            alert('Error: El nombre o correo ingresado no coinciden con el usuario del sistema.');
+        }
+    });
+</script>
 
 </body>
 </html>
